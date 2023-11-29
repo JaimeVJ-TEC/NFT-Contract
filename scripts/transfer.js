@@ -9,6 +9,7 @@ const {
 } = process.env;
 
 async function transferNFT(to_address, tokenId){
+   console.log(to_address,tokenId)
    const provider = new ethers.providers.JsonRpcProvider(API_URL);
    const wallet = new ethers.Wallet(PRIVATE_KEY, provider);
    //Get gas price
