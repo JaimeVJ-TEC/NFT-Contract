@@ -50,7 +50,7 @@ async function createImgInfo(image_url){
 
 async function createJsonInfo(fileIPFS,name,desc) {
     const metadata = {
-        image: image_url,
+        image: fileIPFS,
         name: name,
         description: desc,
         attributes: [
@@ -123,4 +123,4 @@ async function wholeMintProcess(image_url,name,desc){
     return result;
 }
 
-export default wholeMintProcess;
+module.exports = {wholeMintProcess}

@@ -31,4 +31,4 @@ async function transferNFT(to_address, tokenId){
 }
 // transferNFT()
 
-export default transferNFT;
+module.exports = {transferNFT}
