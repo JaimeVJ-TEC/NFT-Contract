@@ -45,9 +45,6 @@ async function createImgInfo(image_url){
     return fileIPFS;
 }
 
-// createImgInfo();
-// https://gateway.pinata.cloud/ipfs/QmUZwDcvuhLtqcsC45J3NdUXBWrS5Yyeek62Na3PDsJLWt
-
 async function createJsonInfo(fileIPFS,name,desc) {
     const metadata = {
         image: fileIPFS,
